@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    letter-spacing: 1px;
+}
+.movie-container{
+    background: whitesmoke;
+    width: 100%;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+.each-movie{
+    background:white;
+    border: 1px solid black;
+}
+.heading{
+    margin-top: 1rem;
+    font-size: 25px;
+    text-align: center;
+}
+@media screen and (min-width:992px){
+    .movie-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:2.5rem;
+    }
+    
+}
